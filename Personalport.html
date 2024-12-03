@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Portfolio Gallery
+    </title>
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+/* padding for whole body */
+body {
+    padding: 15px;
+}
+
+/* styling body */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+}
+
+/* anchor tag decoration */
+a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+a:hover {
+    color: lightpurple;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/* row and column decoration */
+.row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+
+.row>.column {
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    position: relative; /* Add position relative */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.column:hover {
+    width: 25%;
+    top: -20px; /* Move up on hover */
+    box-shadow: 0 14px 8px rgba(0, 128, 0, 0.5); /* Add box shadow on hover */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
+.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: green;
+}
+
+
+</style>
+    <!-- title and tag -->
+<div class="title"><h1>Nora</h1></div>
+    <div class="container">
+        
+        <h3>Previous Projects</h3>
+        <hr>
+
+        <!-- Content of the body-->
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src=
+"Class1.png" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="#">Class 1 Project</a>
+                    </h3>
+                    <p>
+                        Copy all the finished exercises code to Visual Studio Code OR Notepad/TextEdit and save them in one file index.html
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src=
+"Class2.png" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="#">Class 2 Project</a>
+                    </h3>
+                    <p>
+                        A Tribute Page to Barbra Streisand
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="Class3.png"
+php-1.png" alt="" style="width:100%">
+                    <h3>
+                        <a href="#">Class 3 Project</a>
+                    </h3>
+
+                    <p>
+                        Survey Form
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src=
+"Class4.png" 
+                         alt="" style="width:100%">
+                    <h3>
+                        <a href="#">Class 4 Project </a>
+                    </h3>
+                    <p>
+                        Coraline Movie Parallax Website
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
